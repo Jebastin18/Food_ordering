@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.badge {
+  position: relative;
+  top: -8px;
+  right: -8px;
+}
+@media print {
+  nav,
+  .btn {
+    display: none !important;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .card {
+    border: none !important;
+  }
+  .card-header {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
